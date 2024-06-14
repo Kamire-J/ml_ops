@@ -1,0 +1,12 @@
+{  "[python]":{
+    "python.linting.lintOnSave":true,
+    "python.linting.enabled":true,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true
+    }
+},
+    "cSpell.words": [
+        "jsonify",
+        "preds"
+    ]
+}
