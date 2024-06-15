@@ -1,12 +1,23 @@
-{  "[python]":{
-    "python.linting.lintOnSave":true,
-    "python.linting.enabled":true,
-    "editor.codeActionsOnSave": {
-        "source.organizeImports": true
-    }
+{  "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.codeActionsOnSave": {
+            "source.organizeImports.ruff": "explicit"
+          },
+          "editor.formatOnSave": true,
+          "settings": {
+            "flake8.args": [
+                "--max-line-length=120",
+            ]
+        }
+      },
+   "cSpell.diagnosticLevel": "Hint",
+   "workbench.colorCustomizations": {
+
+  // will change the color of three dots to red
+  "editorHint.foreground": "#ff0000",
+
+  // will underline the entire word with dots in your chosen color
+  "editorHint.border": "#00ff66"
 },
-    "cSpell.words": [
-        "jsonify",
-        "preds"
-    ]
+"editorHint.foreground": "#f000",
 }
